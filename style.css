@@ -1,0 +1,79 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container {
+    width: 960px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.game-buttons, .color-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    padding: 10px 30px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button.random {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.square {
+    border-color: black;
+    border-style: solid;
+    border-width: 0.2px;
+    flex: 1 0 auto;
+    margin: 0;
+}
+
+.square:after{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.square:hover {
+    background-color: yellow;
+}  
+
+.hover {
+    background-color: black;
+}
+
+.hover-over {
+    background-color: white;
+}
