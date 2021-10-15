@@ -37,6 +37,10 @@ const randomBtn = document.querySelector('#btn-rdm');
 
 randomBtn.addEventListener('click', hoverRandomColor);
 
+/* const opacityBtn = document.querySelector('#btn-opacity');
+
+opacityBtn.addEventListener('click', hoverOpacity); */
+
 const defaultBtn = document.querySelector('#btn-default');
 
 defaultBtn.addEventListener('click', hover);
@@ -58,7 +62,7 @@ function createGrid(num) {
 function clearGrid () {
     const squares = document.querySelectorAll('.square');
     squares.forEach((square) => {
-        square.style['background'] = "none";
+        square.style['background'] = "white";
     })
 }
 
@@ -75,7 +79,6 @@ function hoverRandomColor() {
         var color = '#'+Math.floor(Math.random()*16777215).toString(16);
         var colorString = '0px 0px 30px 0px ' + color;
         this.style['background'] = color;
-        
     }  , false));
 }
 
@@ -86,6 +89,16 @@ function hover() {
         
     }  , false));
 }
+/* function hoverOpacity() {
+   const squares = document.querySelectorAll('.square');
+    squares.forEach(square => square.addEventListener("mouseover", function(e) {
+        let opacity = this.style.opacity;
+        square.classList.add('opacity');
+        this.style['background'] = '#000000';
+        this.style['opacity'] = (Number(opacity) + 0.1);
+        
+    }  , false));
+} */
 
 const squares = document.querySelectorAll('.square');
     squares.forEach(square => square.addEventListener("mouseover", function() {

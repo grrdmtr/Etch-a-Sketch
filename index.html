@@ -5,20 +5,29 @@
         <meta charset="8-UTF">
         <script src="js-file.js" defer></script>
         <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width"> 
+        <meta name="viewport" content="width=device-width" initial-scale=1.0> 
     </head>
     <body>
-        <div class="main-container">
-            <div class="game-buttons">
-                <button id="btn-clear">CLEAR BOARD</button>
-                <button id="btn-new">NEW BOARD</button>
-            </div>
-            <div id=container class="container">
-            </div>
-            <div class="color-buttons">
-                <button id="btn-rdm" class="random">RANDOM COLOR</button>
-                <button id="btn-default">DEFAULT COLOR</button>
-            </div>
+        <div class="title">
+            <h1>Etch-a-Sketch</h1>
         </div>
+        <div class="main-container">
+                <div class="game">
+                    <div class="game-buttons">
+                        <button id="btn-clear"><span class="text">CLEAR BOARD</span></button>
+                        <button id="btn-new"><span class="text">NEW BOARD</span></button>
+                    </div>
+                    <div id=container class="container">
+                    </div>
+                    <div class="color-buttons">
+                        <button id="btn-rdm"><span class="text">RANDOM COLOR</span></button>
+                        <button id="btn-default"><span class="text">DEFAULT COLOR</span></button>
+                        <!-- <button id="btn-opacity">POWER COLOR</button> -->
+                    </div>
+                </div>  
+        </div>
+        <footer>
+            <p>©grrdmtr</p>
+        </footer>  
     </body>
 </html>
