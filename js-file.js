@@ -15,6 +15,8 @@ for (i=1; i <= numOfSquares; i++) {
     }
 }
 
+hover();
+
 const newBtn = document.querySelector('#btn-new');
 
 newBtn.addEventListener('click', createNewGrid);
